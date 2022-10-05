@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주맥주 모작</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제주맥주 모작</title>
+
+        <!-- 테일윈드 불러오기 -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- 폰트어썸 불러오기 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    </head>
+
+<body>
+    <!-- 헤더 구현 시작  -->
+    <!-- pc 헤더 -->
+    <header class="pc-top-bar bg-white">
+        <div class="top-bar__menu-box-1 con mx-auto h-[154px] flex">
+            <div class="flex-1"></div>
+            <div class="flex-1">
+                <a href="#" class="pc-top-bar__logo h-full flex items-center justify-center">
+                    <img src="images/pc로고.png" alt="">
+                </a>
+            </div>
+            <div class="flex-1 h-full">
+                <div class="menu-box-1__btn-group flex flex-col h-full w-full justify-center">
+                    <nav class="login-menu-box flex justify-end">
+                        <ul class="flex">
+                            <li><a href="#">LOGIN</a></li>
+                            <li><a href="#">JOIN</a></li>
+                            <li><a href="#">CART</a></li>
+                            <li><a href="#">RECRUIT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-widget flex justify-end">
+                        <a href="#">논알콜 제주누보 구매</a>
+                        <a href="#">양조장 예약</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar__menu-box-2 con mx-auto">
+            <div class="h-[40px]">
+                <nav class="pc-top-bar__menu-2 flex h-full items-center justify-center">
+                    <ul class="flex">
+                        <li><a href="#">SUPPORTERS</a></li>
+                        <li><a href="#">JEJU BEER LIFE</a></li>
+                        <li><a href="#">COLLABORATION</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">BREWERY</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="h-[22.39px]"></div>
+        </div>
+    </header>
+
+    <!-- mobile 헤더 -->
+    <header class="mobile-top-bar h-[50px] bg-white">
+        <div class="mobile-con h-full flex">
+            <div class="flex-1 flex">
+                <a href="#" class="mobile-top-bar__logo flex items-center px-3">
+                    <img src="images/모바일로고.png" alt="">
+                </a>
+            </div>
+            <div class="flex-1 flex justify-end">
+                <div class="mobile-top-bar__menu-btn flex items-center px-4">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 헤더 구현 끝 -->
+
+    <!-- 섹션 비디오 구현 시작 -->
+    <section class="section-video">
+        <div>
+            <video src="videos/pc동영상.mp4" autoplay loop
+                muted></video>
+            <video src="videos/모바일 동영상.mp4" autoplay loop
+                muted></video>
+        </div>
+    </section>
+    <!-- 섹션 비디오 구현 끝 -->
+
+    <!-- 상단 배너박스 2~5 구현 시작 -->
+
+    <!-- 상단 배너박스 2 -->
+    <div class="top-banner-box top-banner-box-2">
+        <div class="top-banner-2 top-banner-box-type-1 con h-full">
+            <div class="h-[70px]"></div>
+            <div>
+                <div class="top-banner-2__img-box flex justify-center">
+                    <img src="images/배너2이미지.png" alt="">
+                </div>
+            </div>
+            <div class="h-[30px]"></div>
+            <div class="top-banner__widget top-banner-2__widget flex justify-center mr-[200px]">
+                <div class="top-banner-2__img-box2">
+                    <img src="images/배너2라거.png" alt="">
+                </div>
+                <div class="top-banner-2__text-box flex flex-col ml-5">
+                    <div class="h-[80px]"></div>
+                    <div class="text-white">
+                        <p>
+                            <span>
+                                <strong>제주라거</strong>는 맥주의 기본 4대 원료를 사용하는
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                독일 맥주 순수령 원칙을 지킨
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                제주 하얀 파도의 시원함과
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                부드러움을 닮은 올 몰트 라거입니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[70px]"></div>
+        </div>
+    </div>
+
+    <!-- 상단 배너박스 3 -->
+    <div class="top-banner-box top-banner-box-3">
+        <div class="top-banner-3 top-banner-box-type-1 con h-full">
+            <div class="h-[110px]"></div>
+            <div>
+                <div class="top-banner-3__img-box flex justify-center">
+                    <img src="images/배너3이미지.png" alt="">
+                </div>
+            </div>
+            <div class="h-[50px]"></div>
+            <div class="top-banner__widget top-banner-3__widget flex justify-center mr-[110px]">
+                <div class="top-banner-3__img-box2">
+                    <img src="images/배너3 위트.png" alt="">
+                </div>
+                <div class="top-banner-3__text-box flex flex-col ml-5">
+                    <div class="h-[80px]"></div>
+                    <div class="text-white">
+                        <p>
+                            <span>
+
+                                <strong>제주 위트 에일</strong>은 제주 감귤 껍질의 상큼함과 섬세한 꽃 향,
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                입 안 가득 부드럽게 퍼지는 시트러스향이 만나
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                산뜻한 끝 맛을 선사하는 밀맥주입니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[70px]"></div>
+        </div>
+    </div>
+
+    <!-- 상단 배너박스 4 -->
+    <div class="top-banner-box top-banner-box-4">
+        <div class="top-banner-4 top-banner-box-type-1 con h-full">
+            <div class="h-[70px]"></div>
+            <div>
+                <div class="top-banner-4__img-box flex justify-center">
+                    <img src="images/배너4이미지.png" alt="">
+                </div>
+            </div>
+            <div class="h-[50px]"></div>
+            <div class="top-banner__widget top-banner-4__widget flex justify-center">
+                <div class="top-banner-4__img-box2">
+                    <img src="images/배너4 펠롱.png" alt="">
+                </div>
+                <div class="top-banner-4__text-box flex flex-col ml-5">
+                    <div class="h-[80px]"></div>
+                    <div class="text-white">
+                        <p>
+                            <span>
+
+                                <strong>제주 펠롱 에일</strong>은 반딧불이 반짝이는 곶자왈에서 영감을 받아 탄생하였습니다.
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                다양하고 개성있는 홉들을 블렌딩하여
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                시트러스 아로마와 진한 맥아의 맛이 어우러져
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                풍부한 풍미를 선사하는 페일에일 맥주입니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[70px]"></div>
+        </div>
+    </div>
+
+    <!-- 상단 배너박스 5 -->
+    <div class="top-banner-box top-banner-box-5">
+        <div class="top-banner-5 top-banner-box-type-1 con h-full">
+            <div class="h-[70px]"></div>
+            <div>
+                <div class="top-banner-5__img-box flex justify-center">
+                    <img src="images/배너5.png" alt="">
+                </div>
+            </div>
+            <div class="h-[50px]"></div>
+            <div class="top-banner__widget top-banner-5__widget flex justify-center mr-[60px]">
+                <div class="top-banner-5__img-box2">
+                    <img src="images/배너5거멍.png" alt="">
+                </div>
+                <div class="top-banner-5__text-box flex flex-col ml-5">
+                    <div class="h-[80px]"></div>
+                    <div class="text-white">
+                        <p>
+                            <span>
+
+                                <strong>제주 거멍 에일</strong>은 제주의 여름밤을 떠올리게 하는 짙은 빛깔 속에서,
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                제주 흑보리와 초콜릿 밀로 완성된
+                            </span>
+                        </p>
+                        <p>
+                            <span>
+                                은은한 달큰함과 경쾌한 풍미를 자아내는 흑맥주입니다.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[70px]"></div>
+        </div>
+    </div>
+    <!-- 상단 배너박스 2~5 구현 끝 -->
+
+</body>
+
+</html>
+</head>
+
+<body>
+
+</body>
+
+</html>

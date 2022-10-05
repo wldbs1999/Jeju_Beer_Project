@@ -1,0 +1,234 @@
+/* 폰트 */
+@font-face {
+	font-family: "GmarketSansMedium";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+		format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html > body {
+	font-family: "GmarketSansMedium";
+}
+
+/* 노말라이즈 */
+* > img {
+	display: block;
+}
+
+/* lib */
+.con {
+	max-width: var(--site-width);
+	margin: 0 auto;
+}
+
+.mobile-con {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+:root {
+	--site-width: 1200px;
+}
+
+/* pc 탑바 구현 시작 */
+.pc-top-bar__logo > img {
+	width: 71px;
+	height: 94px;
+}
+
+.login-menu-box > ul > li > a {
+	font-size: 12px;
+	color: #888888;
+	padding: 0 7px;
+	transition: color 0.3s;
+}
+
+.login-menu-box > ul > li:hover > a {
+	color: rgba(229, 231, 235, 1);
+}
+
+.btn-widget {
+	margin-top: 30px;
+}
+
+.btn-widget > a {
+	border-radius: 30px;
+	padding: 4px 20px;
+	font-size: 14px;
+	border-width: 1px;
+	transition: background-color 0.3s;
+}
+
+.btn-widget > a:first-child {
+	background-color: #ff7e6b;
+	color: #ffffff;
+	border-color: #ff7e6b;
+	margin-right: 7px;
+}
+
+.btn-widget > a:first-child:hover {
+	background-color: white;
+	color: #ff7e6b;
+}
+
+.btn-widget > a:last-child {
+	background-color: #1ecad3;
+	color: #fff;
+	border-color: #1ecad3;
+}
+
+.btn-widget > a:last-child:hover {
+	background-color: #10adb5;
+}
+
+.pc-top-bar__menu-2 > ul > li > a {
+	display: block;
+	padding: 0 40px;
+	color: #55585b;
+	font-size: 14px;
+}
+
+.pc-top-bar__menu-2 > ul > li:hover > a {
+	color: rgba(85, 88, 91, 0.3);
+}
+
+/* pc 탑바 구현 끝 */
+
+/* mobile 탑바 구현 시작 */
+.mobile-top-bar__logo > img {
+	width: 104px;
+	height: 24px;
+}
+
+.mobile-top-bar__menu-btn {
+	cursor: pointer;
+}
+
+.mobile-top-bar__menu-btn > i {
+	font-size: 20px;
+	color: #1ecad3;
+}
+
+/* mobile 탑바 구현 끝 */
+
+/* 섹션 비디오 구현 시작 */
+.section-video video:last-child {
+	display: none;
+}
+
+/* 섹션 비디오 구현 끝 */
+
+/* 991px 이상 */
+@media (min-width: 991px) {
+	.mobile-top-bar {
+		display: none;
+	}
+}
+
+/* 991px 이하 */
+@media (max-width: 991px) and (min-width: 766px) {
+	.pc-top-bar {
+		display: none;
+	}
+}
+
+/* 765px 이하 */
+@media (max-width: 765px) {
+	.pc-top-bar {
+		display: none;
+	}
+
+	.section-video video:first-child {
+		display: none;
+	}
+
+	.section-video video:last-child {
+		display: block;
+	}
+
+	.top-banner__widget {
+		flex-direction: column;
+		margin-right: 0 !important;
+		align-items: center;
+		text-align: center;
+	}
+
+	[class*="top-banner-"][class*="__text-box"] > div:first-child {
+		height: 10px;
+	}
+}
+
+/* 상단 배너박스 타입 1 시작 */
+.top-banner-box-type-1 {
+	min-height: 593px;
+}
+
+/* 상단 배너박스 타입 1 끝 */
+
+/* 배너 박스 2 ~ 5 공통속성 */
+.top-banner-box {
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/* 배너 박스 2 시작 */
+.top-banner-box-2 {
+	background-image: url(images/배너2백그라누드이미지.png);
+}
+
+.top-banner-2__img-box > img {
+	height: 173px;
+}
+
+.top-banner-2__img-box2 > img {
+	height: 267px;
+}
+
+/* 배너 박스 2 끝 */
+
+/* 배너 박스 3 시작 */
+.top-banner-box-3 {
+	background-image: url(images/배너3백그라운드이밎.png);
+}
+
+.top-banner-3__img-box > img {
+	height: 91px;
+}
+
+.top-banner-3__img-box2 > img {
+	height: 267px;
+}
+
+/* 배너 박스 3 끝 */
+
+/* 배너 박스 4 시작 */
+.top-banner-box-4 {
+	background-image: url(images/배너4백그라운드이미지.png);
+}
+
+.top-banner-4__img-box > img {
+	height: 86px;
+}
+
+.top-banner-4__img-box2 > img {
+	height: 267px;
+}
+
+/* 배너 박스 4 끝 */
+
+/* 배너 박스 5 시작 */
+.top-banner-box-5 {
+	background-image: url(images/배너5백그라운드이미지.png);
+}
+
+.top-banner-5__img-box > img {
+	height: 84px;
+}
+
+.top-banner-5__img-box2 > img {
+	height: 267px;
+}
+
+/* 배너 박스 5 끝 */
